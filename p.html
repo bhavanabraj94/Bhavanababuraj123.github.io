@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="p.css">
+    <script src="https://kit.fontawesome.com/92390ad522.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="icon">
+            <h2 class="logo">Bhavana Baburaj</h2>
+        </div>
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+
+            <div class="profile-pic">
+                <img src="img/BHAVANAPIC1.png" alt="Profile Picture">
+            </div>
+            <div class="header-text">
+                <p>Hi, I am Bhavana Baburaj <br><br>Working as Assistant Professor in Electronics</p>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------About-------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="img/2024_CANDI_blog_Resume_About_Me_1280x660.jpg" alt="About Me Image">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a dedicated, organized, and methodical individual. 
+                        I have good interpersonal skills, am an excellent team worker 
+                        and am keen to learn and develop new skills. 
+                        I am reliable and dependable and often seek new responsibilities 
+                        within a wide range of employment areas. I have an active and dynamic approach 
+                        to work and getting things done. I am determined and decisive. 
+                        I identify and develop opportunities.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="openTab(event, 'skills')">Skills</p>
+                        <p class="tab-link" onclick="openTab(event, 'experience')">Experience</p>
+                        <p class="tab-link" onclick="openTab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Embedded mini project</li>
+                            <li>Teaching skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Working as an Assistant Professor in Electronics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Post graduation in Electronics</li>
+                            <li>Graduate in Electronics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------------------------------------services-------------------------------------------------->
+
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <article class="work">
+                <img src="img/automation-vehicle.jpg" alt="Vehicle Automation Project">
+                <div class="layer">
+                    <h3>Project on Vehicle Automation</h3>
+                    <p>The project explains how automation can provide security while using a vehicle.</p>
+                    <a href="#"><i class="fa-light fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+            <article class="work">
+                <img src="img/shutterstock_13717364781.jpg" alt="Embedded Systems Projects">
+                <div class="layer">
+                    <h3>Embedded Based Mini Projects</h3>
+                    <p>Projects based on embedded systems using embedded C language.</p>
+                    <a href="#"><i class="fa-light fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </article>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</section>
+</section>
+<!----------------------------------------------contact-------------------------------->
+<div id="contact"></div>
+    <div class="container1">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>Bhavana Baburaj</p>
+            <p><i class="fas fa-phone-square-alt"></i>1023456789</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form method="POST" action="your-server-endpoint">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="p.js"></script>
+</body>
+</html>
